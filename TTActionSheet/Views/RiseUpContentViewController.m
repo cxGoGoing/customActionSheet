@@ -7,7 +7,7 @@
 //
 
 #import "RiseUpContentViewController.h"
-
+#import "RiseUpViewCell.h"
 @interface RiseUpContentViewController ()
 @property (nonatomic,strong)NSArray * PaytypeItems;
 @end
@@ -16,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    //self.tableView.separatorColor = [UIColor blackColor];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    //self.tableView.backgroundColor = [UIColor greenColor];
+    self.tableView.rowHeight = 39;
+    self.tableView.backgroundColor = [UIColor redColor];
 }
 
 - (NSArray*)PaytypeItems
@@ -45,20 +49,14 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString * ID = @"tabelViewCell";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if(cell == nil)
-    {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    cell.textLabel.textAlignment = NSTextAlignmentCenter;
-    cell.textLabel.text = self.PaytypeItems[indexPath.row];
+    RiseUpViewCell * cell = [RiseUpViewCell riseUpViewCellWith:tableView];
+    cell.contentText = self.PaytypeItems[indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    //NSLog(@"我辈惦记啦!%zi",indexPath.row);
+    NSLog(@"我辈惦记啦!%zi",indexPath.row);
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     [self.delegate RiseUpContentViewController:self didSeclect:indexPath.row];
 }

@@ -41,7 +41,7 @@
     self.riseUpView = riseUpView;
     RiseUpContentViewController * riseUpContentVc = [[RiseUpContentViewController alloc]init];
     riseUpContentVc.delegate = self;
-    riseUpContentVc.view.height = 190;
+    riseUpContentVc.view.height = 39*4+20;
     riseUpContentVc.view.width = [UIScreen mainScreen].bounds.size.width;
     riseUpView.contentController = riseUpContentVc;
     [riseUpView showViewFrom:btn];

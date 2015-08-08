@@ -19,6 +19,8 @@
 		578CB89A1B73851300F6D385 /* RiseUpView.m in Sources */ = {isa = PBXBuildFile; fileRef = 578CB8991B73851300F6D385 /* RiseUpView.m */; };
 		578CB89D1B73912F00F6D385 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 578CB89C1B73912F00F6D385 /* UIView+Extension.m */; };
 		578CB8A01B73985900F6D385 /* RiseUpContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578CB89F1B73985900F6D385 /* RiseUpContentViewController.m */; };
+		57937DAC1B75AEA900D59F6E /* RiseUpViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 57937DAB1B75AEA900D59F6E /* RiseUpViewCell.m */; };
+		57937DAF1B75D93A00D59F6E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 57937DAE1B75D93A00D59F6E /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,10 @@
 		578CB89C1B73912F00F6D385 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		578CB89E1B73985900F6D385 /* RiseUpContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiseUpContentViewController.h; sourceTree = "<group>"; };
 		578CB89F1B73985900F6D385 /* RiseUpContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiseUpContentViewController.m; sourceTree = "<group>"; };
+		57937DAA1B75AEA900D59F6E /* RiseUpViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RiseUpViewCell.h; sourceTree = "<group>"; };
+		57937DAB1B75AEA900D59F6E /* RiseUpViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RiseUpViewCell.m; sourceTree = "<group>"; };
+		57937DAD1B75D93A00D59F6E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		57937DAE1B75D93A00D59F6E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +166,14 @@
 		578CB8921B73847800F6D385 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				57937DAD1B75D93A00D59F6E /* UIView+Extension.h */,
+				57937DAE1B75D93A00D59F6E /* UIView+Extension.m */,
 				578CB8981B73851300F6D385 /* RiseUpView.h */,
 				578CB8991B73851300F6D385 /* RiseUpView.m */,
 				578CB89E1B73985900F6D385 /* RiseUpContentViewController.h */,
 				578CB89F1B73985900F6D385 /* RiseUpContentViewController.m */,
+				57937DAA1B75AEA900D59F6E /* RiseUpViewCell.h */,
+				57937DAB1B75AEA900D59F6E /* RiseUpViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -269,6 +279,8 @@
 			files = (
 				578CB8841B73831600F6D385 /* ViewController.m in Sources */,
 				578CB8681B7382F600F6D385 /* AppDelegate.m in Sources */,
+				57937DAF1B75D93A00D59F6E /* UIView+Extension.m in Sources */,
+				57937DAC1B75AEA900D59F6E /* RiseUpViewCell.m in Sources */,
 				578CB89A1B73851300F6D385 /* RiseUpView.m in Sources */,
 				578CB8651B7382F600F6D385 /* main.m in Sources */,
 				578CB88F1B7383CD00F6D385 /* ALView+PureLayout.m in Sources */,
@@ -462,6 +474,7 @@
 				578CB87E1B7382F600F6D385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		578CB87F1B7382F600F6D385 /* Build configuration list for PBXNativeTarget "TTActionSheetTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +483,7 @@
 				578CB8811B7382F600F6D385 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
